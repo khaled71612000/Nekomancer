@@ -1,78 +1,41 @@
 # Nekomancer
 
-> A multiplayer game developed with Unreal Engine 5 in collaboration with Robin Hasenbach, featuring networked gameplay, character abilities, and rich visual design.
 
 ![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-0E1128?logo=unrealengine&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Overview
+**Nekomancer** is a multiplayer game developed using Unreal Engine 5, created with the assistance of Robin Hasenbach. The game features a cat battling waves of necromancers using enhanced input systems, multiplayer capabilities, and fire spells.
 
-A multiplayer game developed with Unreal Engine 5 in collaboration with Robin Hasenbach, featuring networked gameplay, character abilities, and rich visual design.
+## Key Components
 
-Built with **Unreal Engine** and **C++**, demonstrating professional game development patterns: the Actor-Component model, Unreal's reflection system (UPROPERTY/UFUNCTION), Blueprint interoperability, and optimized gameplay systems.
+### Blueprints
+- **PlayerController Blueprint:** Manages player inputs and interactions, utilizing the enhanced input system.
+- **EnemyController Blueprint:** Implements AI behaviors for necromancer enemies, including pathfinding and attack logic.
+- **GameMode Blueprint:** Oversees game state, including wave management and player respawns.
 
-## Features
+### Features
+- **Multiplayer Gameplay:** Designed for multiple players to cooperate and battle against waves of enemies.
+- **Enhanced Input System:** Utilizes advanced input handling for smooth and responsive controls.
+- **Spellcasting Mechanics:** Allows players to cast fire spells to defeat necromancers.
 
-- Unreal Engine gameplay framework (GameMode, GameState, PlayerController)
-- Custom C++ Actor and Component classes
-- Blueprint-C++ interoperability
-- Physics and collision systems
-- Optimized asset loading
-
-## Technologies Used
-
-| Technology | Details |
-|------------|---------|
-| Unreal Engine | 4.x / 5.x |
-| C++ | Modern C++17 |
-| Blueprints | Visual scripting |
-| Chaos Physics | Physics simulation |
-
-## Screenshots / Demo
-
-![Screenshot 1](https://raw.githubusercontent.com/khaled71612000/Nekomancer/HEAD/Plugins/Character_Kitty/Resources/Icon128.png)
-
-![Screenshot 2](https://raw.githubusercontent.com/khaled71612000/Nekomancer/HEAD/Plugins/Character_Lich/Resources/Icon128.png)
-
-![Screenshot 3](https://raw.githubusercontent.com/khaled71612000/Nekomancer/HEAD/Plugins/Level_Meadows/Resources/Icon128.png)
-
-![Screenshot 4](https://raw.githubusercontent.com/khaled71612000/Nekomancer/HEAD/Plugins/VFX_SnakingProjectile/Resources/Icon128.png)
-
-![Screenshot 5](https://raw.githubusercontent.com/khaled71612000/Nekomancer/HEAD/Plugins/WaveSurvival/Resources/Icon128.png)
+This project serves as an excellent example for developers interested in creating multiplayer games with advanced input systems and dynamic enemy interactions using Unreal Engine 5.
+![image](https://github.com/khaled71612000/Nekomancer/assets/59780800/7525b786-58e5-48fe-9056-32bb8c0114fd)
+![image](https://github.com/khaled71612000/Nekomancer/assets/59780800/d01db1d4-aa00-4c4b-a7e1-32657793002c)
+![image](https://github.com/khaled71612000/Nekomancer/assets/59780800/c8c41ae2-ee04-49a4-9d48-eb741b3b5aa2)
 
 ## Getting Started
 
 ### Prerequisites
-
 - [Unreal Engine](https://www.unrealengine.com/en-US/download) 4.x or 5.x
 - Visual Studio 2019 or 2022 with **Desktop development with C++**
-- Git LFS
+- Git LFS (`git lfs install`)
 
-### Installation
-
+### Setup
 ```bash
 git lfs install
 git clone https://github.com/khaled71612000/Nekomancer.git
-cd Nekomancer
 ```
-
-1. Right-click `.uproject` → **Generate Visual Studio project files**
-2. Open `.sln` in Visual Studio
-3. Set config: **Development Editor | Win64**
-4. Build (Ctrl+Shift+B) then launch the editor
-
-## Project Structure
-
-```
-Nekomancer/
-├── Source/                  # C++ source files
-  └── (source files)
-├── Content/                 # Assets, blueprints, levels
-├── Config/                  # Project settings
-└── Nekomancer.uproject
-```
-
-## License
-
-[MIT License](LICENSE)
+1. Right-click the `.uproject` → **Generate Visual Studio project files**
+2. Open `.sln` → Build (**Development Editor | Win64**)
+3. Launch via Unreal Editor
