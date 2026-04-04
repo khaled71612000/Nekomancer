@@ -24,6 +24,17 @@ This project serves as an excellent example for developers interested in creatin
 ![image](https://github.com/khaled71612000/Nekomancer/assets/59780800/d01db1d4-aa00-4c4b-a7e1-32657793002c)
 ![image](https://github.com/khaled71612000/Nekomancer/assets/59780800/c8c41ae2-ee04-49a4-9d48-eb741b3b5aa2)
 
+
+## Tech Stack
+
+| Technology | Role |
+|---|---|
+| Unreal Engine 4/5 | Game engine (Blueprints + C++) |
+| C++ | Gameplay systems, custom components |
+| HLSL / USF | Custom shader authoring |
+| Git LFS | Large asset version control |
+
+
 ## Getting Started
 
 ### Prerequisites
